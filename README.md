@@ -1,4 +1,4 @@
 # Weather App project with HTML/CSS/JavaScipt
 
-![](gif.gif)
+![](img/gif.gif)
 
