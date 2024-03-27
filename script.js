@@ -14,7 +14,7 @@ weatherForm.addEventListener("submit", async event => {
             const weatherData = await getWeatherData(city);
             displayWeatherInfo(weatherData);
         }
-        catch(error){
+        catch(error) {
             console.error(error);
             displayError(error);
         }
@@ -25,7 +25,7 @@ weatherForm.addEventListener("submit", async event => {
 
 });
 
-async function getWeatherData(city){
+async function getWeatherData(city) {
 
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
 
@@ -38,7 +38,7 @@ async function getWeatherData(city){
     return await response.json();
 }
 
-function displayWeatherInfo(data){
+function displayWeatherInfo(data) {
     
     const  {name: city,
             main: {temp, humidity},
@@ -73,7 +73,7 @@ function displayWeatherInfo(data){
 
 }
 
-function getWeatherEmoji(weatherId){
+function getWeatherEmoji(weatherId) {
 
     switch(true) {
         case (weatherId >= 200 && weatherId < 300):
