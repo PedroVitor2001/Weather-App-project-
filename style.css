@@ -1,6 +1,6 @@
 body {
   font-family: JetBrains Mono;
-  background: url(background.jpg);
+  background: url(img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -40,7 +40,7 @@ button[type="submit"]:hover {
 }
 
 .card {
-  background: linear-gradient(180deg, hsl(207, 72%, 17%), hsl(207, 58%, 64%));
+  background: linear-gradient(180deg, #132330, #102c52, #5089b1);
   border-radius: 10px;
   padding: 50px;
   box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.5);
